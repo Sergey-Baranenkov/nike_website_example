@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,IAAI;EACF,gBAAgB,ECFH,OAAO;;;ADItB,MAAM;EACJ,gBAAgB,ECJD,OAAO;;;ADMxB,MAAM;EACJ,gBAAgB,ECND,OAAO",
+"sources": ["../sass/main.sass","../sass/_colors.sass"],
+"names": [],
+"file": "main.css"
+}
