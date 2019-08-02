@@ -151,7 +151,7 @@
 
   div.like-shop_icons
     visibility: hidden
-    img
+    div
       top: 306px
       &:first-of-type
         left: 30px
@@ -160,7 +160,7 @@
 
 .lc-img-left
   div.like-shop_icons
-    img
+    div
       top: 35px
       &:first-of-type
         left: auto
@@ -225,7 +225,20 @@
           background-repeat: no-repeat
 
 .like-shop_icons
-  img
-    position: absolute
-    &:hover
-      color: blue
+  position: absolute
+  z-index: 12
+  top: 33px
+  height: 16px
+  width: 100%
+  div
+    width: 16px
+    height: 16px
+  div.basket-img
+    right: 30px
+    left: auto
+    top: 0px
+  div.heart-img
+    top: 0px
+    left: 30px
+    right: auto
+    background-image: url('../img/cards/heart-sprite.png')

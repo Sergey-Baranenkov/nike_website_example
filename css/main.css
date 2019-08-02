@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #c8cfdc;
+  background-color: #f2f9fd;
   color: #000;
   font-family: "Roboto", sans-serif;
   margin-top: 50px;
@@ -35,7 +35,7 @@ a {
 header {
   height: 90px;
   padding: 20px;
-  background-color: #f2f9fd;
+  background-color: inherit;
 }
 header a {
   color: #333333;
@@ -67,8 +67,8 @@ header a {
   height: 3px;
   width: 100%;
   background-color: #0089cf;
-  -webkit-transform: translateY(29px) scale(0);
-          transform: translateY(29px) scale(0);
+  -webkit-transform: translateY(9px) scale(0);
+          transform: translateY(9px) scale(0);
   -webkit-transition: -webkit-transform ease-out 0.2s;
   transition: -webkit-transform ease-out 0.2s;
   transition: transform ease-out 0.2s;
@@ -78,8 +78,36 @@ header a {
   color: #0089cf;
 }
 .header_menu li a:hover::after {
-  -webkit-transform: translateY(29px) scale(1);
-          transform: translateY(29px) scale(1);
+  -webkit-transform: translateY(9px) scale(1);
+          transform: translateY(9px) scale(1);
+}
+
+.icon {
+  position: absolute;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-clip: border-box;
+  background-position: -16px 0;
+}
+.icon:hover {
+  background-position: 0 0;
+}
+
+.loupe-img, .basket-img, .sign-img {
+  top: 4.5px;
+  left: -26px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/header/loupe-sprite.png");
+}
+
+.basket-img {
+  background-image: url("../img/header/basket-sprite.png");
+}
+
+.sign-img {
+  background-image: url("../img/header/person-sprite.png");
 }
 
 .header_additional_menu {
@@ -93,14 +121,11 @@ header a {
 .header_additional_menu li:not(:first-of-type) {
   margin-left: 56px;
 }
-.header_additional_menu li img {
-  float: left;
-  position: absolute;
-  left: -26px;
-  top: 6px;
-}
 .header_additional_menu li a:hover {
   color: #0089cf;
+}
+.header_additional_menu li a:hover div.icon {
+  background-position: 0 0;
 }
 
 .products {
@@ -292,20 +317,20 @@ header a {
 .large-card div.like-shop_icons {
   visibility: hidden;
 }
-.large-card div.like-shop_icons img {
+.large-card div.like-shop_icons div {
   top: 306px;
 }
-.large-card div.like-shop_icons img:first-of-type {
+.large-card div.like-shop_icons div:first-of-type {
   left: 30px;
 }
-.large-card div.like-shop_icons img:last-of-type {
+.large-card div.like-shop_icons div:last-of-type {
   right: 30px;
 }
 
-.lc-img-left div.like-shop_icons img {
+.lc-img-left div.like-shop_icons div {
   top: 35px;
 }
-.lc-img-left div.like-shop_icons img:first-of-type {
+.lc-img-left div.like-shop_icons div:first-of-type {
   left: auto;
   right: 100px;
 }
@@ -376,11 +401,27 @@ header a {
   background-repeat: no-repeat;
 }
 
-.like-shop_icons img {
+.like-shop_icons {
   position: absolute;
+  z-index: 12;
+  top: 33px;
+  height: 16px;
+  width: 100%;
 }
-.like-shop_icons img:hover {
-  color: blue;
+.like-shop_icons div {
+  width: 16px;
+  height: 16px;
+}
+.like-shop_icons div.basket-img {
+  right: 30px;
+  left: auto;
+  top: 0px;
+}
+.like-shop_icons div.heart-img {
+  top: 0px;
+  left: 30px;
+  right: auto;
+  background-image: url("../img/cards/heart-sprite.png");
 }
 
 footer {

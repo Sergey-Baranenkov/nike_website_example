@@ -5,7 +5,7 @@
 header
   height: 90px
   padding: 20px
-  background-color: $header-bgColor
+  background-color: inherit
   a
     color: $header-fontColor
     font-family: 'Fira Sans', sans-serif
@@ -30,13 +30,35 @@ header
       height: 3px
       width: 100%
       background-color: $header-marker
-      transform: translateY(29px) scale(0)
+      transform: translateY(9px) scale(0)
       transition: transform ease-out 0.2s
     a:hover
       color: $header-marker
       &::after
-        transform: translateY(29px) scale(1)
+        transform: translateY(9px) scale(1)
 
+.icon
+  position: absolute
+  overflow: hidden
+  background-repeat: no-repeat
+  background-size: auto
+  background-clip: border-box
+  background-position: -16px 0
+  &:hover
+    background-position: 0 0
+
+.loupe-img
+  top: 4.5px
+  left: -26px
+  width: 16px
+  height: 16px
+  background-image: url('../img/header/loupe-sprite.png')
+.basket-img
+  @extend .loupe-img
+  background-image: url('../img/header/basket-sprite.png')
+.sign-img
+  @extend .loupe-img
+  background-image: url('../img/header/person-sprite.png')
 
 .header_additional_menu
   display: flex
@@ -44,10 +66,7 @@ header
     position: relative
     &:not(:first-of-type)
       margin-left: 56px
-    img
-      float: left
-      position: absolute
-      left: -26px
-      top: 6px
     a:hover
       color: $header-marker
+      div.icon
+        background-position: 0 0
