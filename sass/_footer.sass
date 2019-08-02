@@ -1,0 +1,68 @@
+@import "colors"
+
+footer
+  background-color: $footer-bgColor
+  padding-top: 40px
+  height: 260px
+  display: flex
+  flex-direction: column
+  div.logo
+    margin-left: 60px
+    margin-top: 5px
+  div.footer_menu
+    display: flex
+    color: #666666
+    font-family: 'Roboto', sans-serif
+    font-size: 14px
+    line-height: 25px
+    text-transform: uppercase
+    a
+      color: #666666
+    div.row
+      width: 100%
+
+.contacts
+  margin-right: 50px
+
+.networks
+  display: flex
+  align-items: center
+  div
+    cursor: pointer
+    position: relative
+    display: block
+    border: 1px solid #333
+    width: 50px
+    height: 50px
+    margin-right: 10px
+    img
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+
+.subscribe
+  margin-top: 30px
+  img
+    height: 13px
+    position: relative
+    top: 3px
+    margin-right: 10px
+  input
+    position: relative
+    background-color: $footer-bgColor
+    border: none
+    outline: none
+    color: $footer-fontColor
+    font-family: Roboto
+    font-size: 14px
+    font-weight: 300
+  hr
+    width: 100%
+    height: 1px
+    color: #333
+    background-color: #333
+    border: none
+.copyright
+  color: #666
+  margin-bottom: 30px
