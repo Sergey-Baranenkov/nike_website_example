@@ -119,8 +119,27 @@ header a {
   height: 430px;
   width: 280px;
 }
+.small-card:hover {
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.small-card:hover div.like-shop_icons {
+  visibility: visible;
+}
 .small-card:not(:last-child) {
   margin-right: 20px;
+}
+.small-card div.like-shop_icons {
+  visibility: hidden;
+}
+.small-card div.like-shop_icons img {
+  top: 36px;
+}
+.small-card div.like-shop_icons img:first-of-type {
+  left: 30px;
+}
+.small-card div.like-shop_icons img:last-of-type {
+  right: 30px;
 }
 
 .feature {
@@ -260,10 +279,36 @@ header a {
   height: 430px;
   background-color: white;
 }
+.large-card:hover {
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.large-card:hover div.like-shop_icons {
+  visibility: visible;
+}
 .large-card:not(:last-child) {
   margin-right: 20px;
 }
+.large-card div.like-shop_icons {
+  visibility: hidden;
+}
+.large-card div.like-shop_icons img {
+  top: 306px;
+}
+.large-card div.like-shop_icons img:first-of-type {
+  left: 30px;
+}
+.large-card div.like-shop_icons img:last-of-type {
+  right: 30px;
+}
 
+.lc-img-left div.like-shop_icons img {
+  top: 35px;
+}
+.lc-img-left div.like-shop_icons img:first-of-type {
+  left: auto;
+  right: 100px;
+}
 .lc-img-left div.product-description {
   position: absolute;
   top: 0;
@@ -329,6 +374,13 @@ header a {
   width: 8px;
   height: 16px;
   background-repeat: no-repeat;
+}
+
+.like-shop_icons img {
+  position: absolute;
+}
+.like-shop_icons img:hover {
+  color: blue;
 }
 
 footer {

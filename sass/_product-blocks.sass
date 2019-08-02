@@ -2,6 +2,7 @@
   height: 880px
   margin-top: 30px
   margin-bottom: 20px
+
 .product-line
   &:not(:last-child)
     margin-bottom: 20px
@@ -11,9 +12,21 @@
   position: relative
   height: 430px
   width: 280px
+  &:hover
+    box-shadow: 0 0 4px rgba(0,0,0,0.3)
+    div.like-shop_icons
+      visibility: visible
   &:not(:last-child)
     margin-right: 20px
 
+  div.like-shop_icons
+    visibility: hidden
+    img
+      top: 36px
+      &:first-of-type
+        left: 30px
+      &:last-of-type
+        right: 30px
 .feature
   z-index: 10
   position: absolute
@@ -129,9 +142,31 @@
   width: 580px
   height: 430px
   background-color: white
+  &:hover
+    box-shadow: 0 0 4px rgba(0,0,0,0.3)
+    div.like-shop_icons
+      visibility: visible
   &:not(:last-child)
     margin-right: 20px
+
+  div.like-shop_icons
+    visibility: hidden
+    img
+      top: 306px
+      &:first-of-type
+        left: 30px
+      &:last-of-type
+        right: 30px
+
 .lc-img-left
+  div.like-shop_icons
+    img
+      top: 35px
+      &:first-of-type
+        left: auto
+        right: 100px
+
+
   div.product-description
       position: absolute
       top: 0
@@ -188,3 +223,9 @@
           width: 8px
           height: 16px
           background-repeat: no-repeat
+
+.like-shop_icons
+  img
+    position: absolute
+    &:hover
+      color: blue
