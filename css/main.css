@@ -9,10 +9,6 @@ body {
   margin-top: 50px;
 }
 
-img {
-  display: block;
-}
-
 ul {
   list-style: none;
   margin: 0;
@@ -131,7 +127,6 @@ header a {
 .products {
   height: 880px;
   margin-top: 30px;
-  margin-bottom: 20px;
 }
 
 .product-line:not(:last-child) {
@@ -153,18 +148,6 @@ header a {
 }
 .small-card:not(:last-child) {
   margin-right: 20px;
-}
-.small-card div.like-shop_icons {
-  visibility: hidden;
-}
-.small-card div.like-shop_icons img {
-  top: 36px;
-}
-.small-card div.like-shop_icons img:first-of-type {
-  left: 30px;
-}
-.small-card div.like-shop_icons img:last-of-type {
-  right: 30px;
 }
 
 .feature {
@@ -248,7 +231,8 @@ header a {
 }
 
 .product-img {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
   left: 0;
   right: 0;
@@ -259,7 +243,7 @@ header a {
 }
 
 .sc-bottom-img-align {
-  bottom: 0;
+  bottom: 0px;
 }
 
 .product-price {
